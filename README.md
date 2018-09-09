@@ -5,18 +5,22 @@ first found.
 
 ### Usage
 ```javascript
-var scanner = require('chromecast-scanner');
+const scanner = require('chromecast-scanner');
 
-scanner(function(err, service) {
-  console.log('chromecast %s running on: %s',
+scanner((err, service) => {
+  console.log(
+    'chromecast %s running on: %s',
     service.name,
-    service.data);
+    service.data
+  );
 });
 ```
 
 ### Installation
 
-`npm install chromecast-scanner`
+```bash
+npm install chromecast-scanner
+```
 
 ## License
 MIT
